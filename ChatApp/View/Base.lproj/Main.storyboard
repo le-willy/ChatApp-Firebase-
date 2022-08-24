@@ -100,7 +100,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Register"/>
                                 <connections>
-                                    <segue destination="49s-ia-S9Q" kind="show" identifier="registerToMessage" id="UaB-x1-jID"/>
+                                    <action selector="registerPressed:" destination="0Q4-zW-IdK" eventType="touchUpInside" id="0cb-FP-zZt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -122,6 +122,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="zWR-Rm-iTh" id="agh-sA-K65"/>
                         <outlet property="passworldTextField" destination="ZN5-xX-6Mb" id="dWs-SN-BQl"/>
+                        <segue destination="49s-ia-S9Q" kind="show" identifier="registerToMessage" id="6xJ-zK-awp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sd5-f5-Obq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -162,7 +163,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Login"/>
                                 <connections>
-                                    <segue destination="49s-ia-S9Q" kind="show" identifier="loginToMessage" id="H04-BJ-VCO"/>
+                                    <action selector="loginPressed:" destination="pSJ-Ot-LHq" eventType="touchUpInside" id="0bA-UN-6Oy"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YvJ-aO-rOS">
@@ -200,11 +201,12 @@
                     <connections>
                         <outlet property="emailTextField" destination="YvJ-aO-rOS" id="RzL-qg-a1T"/>
                         <outlet property="passworldTextField" destination="2rr-Sl-UQF" id="HxH-CD-Q3M"/>
+                        <segue destination="49s-ia-S9Q" kind="show" identifier="loginToMessage" id="J6k-RN-TfN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RwJ-bq-1YM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797" y="1637"/>
+            <point key="canvasLocation" x="704" y="1689"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="Be8-iN-98i">
@@ -264,7 +266,13 @@
                             <constraint firstItem="dbP-zc-pDQ" firstAttribute="trailing" secondItem="X6a-uT-yzw" secondAttribute="trailing" id="w41-WW-RVz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="J65-kH-GoG"/>
+                    <navigationItem key="navigationItem" id="J65-kH-GoG">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="825-Qd-ksQ">
+                            <connections>
+                                <action selector="logoutPressed:" destination="49s-ia-S9Q" id="uz0-gx-qyW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextField" destination="2H7-fn-9Up" id="nNA-54-ZSP"/>
                         <outlet property="tableView" destination="X6a-uT-yzw" id="bcI-Yi-LKx"/>
@@ -276,7 +284,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UaB-x1-jID"/>
+        <segue reference="J6k-RN-TfN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>

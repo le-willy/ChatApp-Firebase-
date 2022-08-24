@@ -17,11 +17,11 @@
 		3FF1757D28B3AF6A003345FB /* ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1757C28B3AF6A003345FB /* ChatAppTests.swift */; };
 		3FF1758728B3AF6A003345FB /* ChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1758628B3AF6A003345FB /* ChatAppUITests.swift */; };
 		3FF1758928B3AF6A003345FB /* ChatAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1758828B3AF6A003345FB /* ChatAppUITestsLaunchTests.swift */; };
-		3FF1759628B3AFD7003345FB /* GoogleService-Info-2.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FF1759528B3AFD7003345FB /* GoogleService-Info-2.plist */; };
 		3FF1759A28B3E077003345FB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1759928B3E077003345FB /* WelcomeViewController.swift */; };
 		3FF1759C28B3E0A7003345FB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1759B28B3E0A7003345FB /* RegisterViewController.swift */; };
 		3FF1759E28B3E0C7003345FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1759D28B3E0C7003345FB /* LoginViewController.swift */; };
 		3FF175A028B3E0E5003345FB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1759F28B3E0E5003345FB /* ChatViewController.swift */; };
+		3FF175A228B4E678003345FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FF175A128B4E678003345FB /* GoogleService-Info.plist */; };
 		69D3E67927614F0D5E17B38F /* Pods_ChatApp_ChatAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980A28C95B3A98AA43C5D074 /* Pods_ChatApp_ChatAppUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,11 +58,11 @@
 		3FF1758228B3AF6A003345FB /* ChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF1758628B3AF6A003345FB /* ChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITests.swift; sourceTree = "<group>"; };
 		3FF1758828B3AF6A003345FB /* ChatAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3FF1759528B3AFD7003345FB /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info-2.plist"; path = "../../../../Downloads/GoogleService-Info-2.plist"; sourceTree = "<group>"; };
 		3FF1759928B3E077003345FB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3FF1759B28B3E0A7003345FB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3FF1759D28B3E0C7003345FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FF1759F28B3E0E5003345FB /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		3FF175A128B4E678003345FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		457FC90A8E95BF7CC38F5247 /* Pods-ChatApp-ChatAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp-ChatAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChatApp-ChatAppUITests/Pods-ChatApp-ChatAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4CD17F0217FFB176C3704CB6 /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980A28C95B3A98AA43C5D074 /* Pods_ChatApp_ChatAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp_ChatAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,7 +131,7 @@
 				3FF1756E28B3AF6A003345FB /* Assets.xcassets */,
 				3FF1757028B3AF6A003345FB /* LaunchScreen.storyboard */,
 				3FF1757328B3AF6A003345FB /* Info.plist */,
-				3FF1759528B3AFD7003345FB /* GoogleService-Info-2.plist */,
+				3FF175A128B4E678003345FB /* GoogleService-Info.plist */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -305,8 +305,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FF1757228B3AF6A003345FB /* LaunchScreen.storyboard in Resources */,
+				3FF175A228B4E678003345FB /* GoogleService-Info.plist in Resources */,
 				3FF1756F28B3AF6A003345FB /* Assets.xcassets in Resources */,
-				3FF1759628B3AFD7003345FB /* GoogleService-Info-2.plist in Resources */,
 				3FF1756D28B3AF68003345FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

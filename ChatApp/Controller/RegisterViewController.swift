@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
+
 
 class RegisterViewController: UIViewController {
     
@@ -17,5 +21,20 @@ class RegisterViewController: UIViewController {
         emailTextField.placeholder = "Email"
         passworldTextField.placeholder = "Passworld"
         passworldTextField.isSecureTextEntry = true
+    }
+    
+    @IBAction func registerPressed(_ sender: UIButton) {
+        let email = emailTextField.text
+        let password = passworldTextField.text
+        
+        if let email = email, let password = password {
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                guard error == nil else {
+                    self.passworldTextField.placeholder = error?.localizedDescription
+                    return
+                }
+                self.performSegue(withIdentifier: "registerToMessage", sender: self)
+            }
+        }
     }
 }

@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
@@ -16,6 +19,22 @@ class LoginViewController: UIViewController {
         emailTextField.placeholder = "Email"
         passworldTextField.placeholder = "Passworld"
         passworldTextField.isSecureTextEntry = true
+        
+    }
+    
+    @IBAction func loginPressed(_ sender: UIButton) {
+        let email = emailTextField.text
+        let password = passworldTextField.text
+        
+        if let email = email, let password = password {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                guard error == nil else {
+                    return
+                }
+                self.performSegue(withIdentifier: "loginToMessage", sender: self)
+            }
+        }
+
         
     }
 }
